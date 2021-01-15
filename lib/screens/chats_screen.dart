@@ -103,12 +103,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
                 focusedBorder: borderSetting,
               ),
             ),
-            Expanded(
-              child: Container(
-                margin: EdgeInsets.symmetric(vertical: 15.0),
-                child: ContactStream(),
-              ),
-            ),
+            ContactStream(),
           ],
         ),
       ),

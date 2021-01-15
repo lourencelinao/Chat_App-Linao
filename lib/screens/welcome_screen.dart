@@ -35,15 +35,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: Text(
                   'Connect Together',
                   style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25.0),
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25.0,
+                  ),
                 ),
               ),
               Container(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
                 child: Text(
-                  'Lorem ipsum dolor sit amet',
+                  'App by Lourence Linao',
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 15.0,

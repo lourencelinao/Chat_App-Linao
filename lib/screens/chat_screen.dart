@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:flutter/services.dart';
 
 var borderSetting = OutlineInputBorder(
   borderSide: BorderSide(color: Colors.grey, width: 2),
@@ -52,7 +53,7 @@ class _ChatScreenState extends State<ChatScreen> {
             Material(
               elevation: 5,
               child: TextField(
-                // inputFormatters: [],
+                maxLength: 240,
                 controller: messageTextController,
                 onChanged: (value) async {
                   message = value;
